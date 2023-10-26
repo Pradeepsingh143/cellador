@@ -11,8 +11,8 @@ const open_Sans = Open_Sans({
 export const font_text = open_Sans.className;
 
 export const metadata = {
-  title: 'Real Estate Solutions',
-  description: 'Bramble Management Group is a trusted real estate company',
+  title: 'CELLADOR Builders',
+  description: 'Real estate acquisition, development and management firm',
 }
 
 export default function RootLayout({ children }) {
