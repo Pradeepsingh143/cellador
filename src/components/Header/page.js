@@ -21,17 +21,23 @@ export default function Header() {
         </div>
         <nav className="nav__menu hidden md:block md:flex-grow mr-20 z-10">
           <ul className="menu flex text-lg tracking-wide font-base text-white gap-20 justify-end">
-            <Link href={"#about"}>
-              <li className="brightness-90 hover:brightness-100">About Us</li>
-            </Link>
-            <Link href={"#mission"}>
-              <li className="brightness-90 hover:brightness-100">
+            <li className="brightness-90 hover:brightness-100">
+              <Link href={"#about"}>
+                About Us
+              </Link>
+            </li>
+
+            <li className="brightness-90 hover:brightness-100">
+              <Link href={"#mission"}>
                 Our Mission
-              </li>
-            </Link>
-            <Link href={"#vision"}>
-              <li className="brightness-90 hover:brightness-100">Our Vision</li>
-            </Link>
+              </Link>
+            </li>
+
+            <li className="brightness-90 hover:brightness-100">
+              <Link href={"#vision"}>
+                Our Vision
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className="button hidden md:flex bg-primary z-10 md:w-[177px] md:h-[54px] justify-center items-center rounded-[10px] text-white ">
@@ -53,24 +59,34 @@ export default function Header() {
           )}
         </div>
       </div>
-        <div className="mobileMenu sm:hidden">
-          {!toggleMenu && (
-            <nav className="absolute container top-24 py-10 left-0 w-full list-none flex flex-col gap-5 font-medium tracking-wide text-white z-10 bg-primary">
-              <Link href={"#about"}>
-                <li>About Us</li>
-              </Link>
-              <Link href={"#mission"}>
-                <li>Our Mission</li>
-              </Link>
-              <Link href={"#vision"}>
-                <li>Our Vision</li>
-              </Link>
-              <Link href={"#contact"}>
-                <li>Contact Us</li>
-              </Link>
-            </nav>
-          )}
-        </div>
+      <div className="mobileMenu sm:hidden">
+        {!toggleMenu && (
+          <nav className="absolute container top-24 py-10 left-0 w-full list-none flex flex-col gap-5 font-medium tracking-wide text-white z-10 bg-primary">
+            <ul className="list__item">
+              <li>
+                <Link href={"#about"}>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href={"#mission"}>
+                  Our Mission
+                </Link>
+              </li>
+              <li>
+                <Link href={"#vision"}>
+                  Our Vision
+                </Link>
+              </li>
+              <li>
+                <Link href={"#contact"}>
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        )}
+      </div>
     </header>
   );
 }
