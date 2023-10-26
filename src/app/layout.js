@@ -2,6 +2,7 @@ import { Raleway, Open_Sans } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header/page'
 import Footer from '@/components/Footer/page'
+import {Analytics} from "@vercel/analytics/react"
 
 const raleway = Raleway({ subsets: ['latin'] })
 const open_Sans = Open_Sans({
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={raleway.className}>
         <Header />
         {children}
+        <Analytics />
         <Footer />
         </body>
     </html>
