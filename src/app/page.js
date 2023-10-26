@@ -30,18 +30,19 @@ export default function Home() {
             />
           </div>
           <div className="right__col w-full md:w-1/2">
+            <div className="image h-[300px] md:h-[720px] relative">
             <Image
-              className="brightness-50 h-[300px] md:h-[720px] rounded-none md:rounded-bl-3xl"
+              className="brightness-50 rounded-none rounded-bl-none md:rounded-bl-[100px]"
               style={{
                 objectFit: "cover",
-                borderRadius: "0px 0px 0px 100px"
               }}
+              fill={true}
+              layout={"fill"}
               priority={true}
-              src={"/assests/heroimg.png"}
-              height={798}
-              width={746}
+              src={"/assests/heroimg.png"} 
               alt="CELLADOR Builders hero image"
             />
+            </div>
           </div>
         </div>
       </section>
@@ -108,7 +109,7 @@ export default function Home() {
                 alt="why choose CELLADOR Builders"
                 width={460}
                 height={570}
-                className="z-10 relative h-[220px] md:w-[460px] md:h-[570px]"
+                className="z-10 relative h-[220px] md:w-[460px] md:h-[570px] object-cover rounded-xl"
               />
               <Image
                 src={group}
@@ -167,7 +168,7 @@ export default function Home() {
               alt="CELLADOR Builders Mission"
               width={460}
               height={500}
-              className="w-[460px] h-[220px] md:w-[460px] md:h-[500px]"
+              className="w-[460px] h-[220px] md:w-[460px] md:h-[500px] object-cover rounded-xl"
             />
           </div>
           <div className="right-col mt-8 md:mt-0 md:flex-1 md:ml-10 md:mr-16">
@@ -202,7 +203,7 @@ export default function Home() {
               alt="CELLADOR Builders vision"
               width={460}
               height={500}
-              className="w-[460px] h-[220px] md:w-[460px] md:h-[500px]"
+              className="w-[460px] h-[220px] md:w-[460px] md:h-[500px] object-cover rounded-xl"
             />
           </div>
           <div className="right-col mt-8 md:mt-0 md:flex-1 md:mr-16">
