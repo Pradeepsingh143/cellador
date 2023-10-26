@@ -62,7 +62,7 @@ export default function Header() {
       <div className="mobileMenu sm:hidden">
         {!toggleMenu && (
           <nav className="absolute container top-24 py-10 left-0 w-full list-none flex flex-col gap-5 font-medium tracking-wide text-white z-10 bg-primary">
-            <ul className="list__item">
+            <ul className="list__item flex flex-col gap-5">
               <li>
                 <Link href={"#about"}>
                   About Us
